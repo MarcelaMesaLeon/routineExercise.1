@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    background-image: url('../img/flores.jpg');    
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 16px;
+    
+}
+
+/*Estilos cabecera*/
+.titleContain{
+    margin: 30px;
+}
+.titleContain h1{
+    font-family: 'Homemade Apple';
+    font-size: 40px;
+    height: 60px;    
+}
+.titleContain p{
+    font-family: 'Square Peg';
+    font-size: 60px;    
+}
+
+/*Estilos dias de la semana*/
+.principalContain{
+    display: grid;
+    grid-template-rows: 100px, 100px;
+    grid-template-columns: 50px, 50px, 50px;
+    gap: 30px;
+    margin: 2%;
+    padding-left: 8%;
+    padding-top: 2%;    
+}
+.grid1{
+    grid-column:1/1;
+    grid-row: 1/1;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;          
+}
+.grid2{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;
+}
+.grid3{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;
+}
+.grid4{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;
+}
+.grid5{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;
+}
+.grid6{
+    grid-column: 3/3;
+    grid-row: 2/2;
+    width: 230px;
+    height: 230px;
+    background-image: url('../img/cinta.png');
+    background-size: cover;
+}
+
+/*Estilos texto de cada dia de la semana*/
+.textCard{
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+.textCard h2{
+    background-image: url(../img/titulo.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: 30px;
+    left: -30px;
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 30px;    
+}
+.textCard p{
+    position: relative;
+    bottom: 25px;
+    right: 40px;
+    font-family: 'Square Peg';
+    font-size: 30px;
+    height: 0.5px;
+    text-align: center;    
+}
+.link{
+    position: relative;
+    top: 15px;
+    left: 80px;
+    background-image: url(../img/boton.png);
+    background-size: cover;
+    width: 120px;
+    height: 50px;
+    font-family: 'Caveat';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.link a{
+    text-decoration: none;
+    color: #9534eb;
+}
+.link a:hover{
+    color: #2c064e;
+}
+
+/*Estilos pie de pagina*/
+.final{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 20px;
+    font-family: 'Homemade Apple';
+    font-size: 30px;    
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 780px){
+
+    .titleContain h1{        
+        font-size: 40px;
+        height: 60px;    
+    }
+    .titleContain p{        
+        font-size: 45px;    
+    }
+    .principalContain{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;      
+    }
+    .final{
+        display: flex;
+        flex-direction: column-reverse;        
+        align-items: center;      
+        padding-top: 30px;
+        font-family: 'Homemade Apple';
+        font-size: 20px;    
+    }
+    html{   
+        background-size: cover;         
+        background-position: center;        
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    html{
+        background-size: cover;        
+    }
+    .final{
+        margin-top: 0px;
+        padding-top: 0px;   
+    }
+}
+
+
